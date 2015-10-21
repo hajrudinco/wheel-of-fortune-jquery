@@ -8,7 +8,9 @@ http://dss.ba/wheel-of-fortune-jquery/demo.html
 ```javascript
 $(".wheel").wheelOfFortune({
     optionName: value,
-    ...,
+    ...
+    ...
+    ...
     onFinished: function() {
         console.log("Finished...");
     }
