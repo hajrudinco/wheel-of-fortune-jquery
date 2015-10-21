@@ -26,7 +26,7 @@ methods:
  - reset
  - destroy
  
-#options
+#default options
 ```javascript
 /**
  * Elements for circle
