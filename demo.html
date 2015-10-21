@@ -28,8 +28,8 @@
     <script>
         $(document).ready(function () {
             $(".wheel").wheelOfFortune({
-                onFinished: function() {
-                    console.log("Finished...");
+                onFinished: function(selectedValue) {
+                    console.log("Finished...", selectedValue);
                 }
             });
 

@@ -189,7 +189,7 @@
                 rotationAngle -= (self.distanceTraveled - self.pathLength);
                 context.rotate(rotationAngle);
                 self._drawTriangles();
-                options.onFinished();
+                options.onFinished(options.elements[self.stopAtIndex]);
                 return;
             }
 
@@ -329,7 +329,7 @@
         /**
          * Function executed after rotation has finished
          */
-        onFinished: function() {}
+        onFinished: function(selectedValue) {}
     };
 
 } ( jQuery ));
