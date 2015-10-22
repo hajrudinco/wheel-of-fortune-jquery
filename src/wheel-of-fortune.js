@@ -128,10 +128,13 @@
             var innerHeight = self.$wheel.innerHeight();
             self.radius = (innerWidth < innerHeight) ? innerWidth / 2 : innerHeight / 2;
 
-            canvas.setAttribute('width', innerWidth);
-            canvas.setAttribute('height', innerHeight);
+            var devicePixelRatio = window.devicePixelRatio || 1;
+
+            canvas.setAttribute('width', innerWidth * devicePixelRatio);
+            canvas.setAttribute('height', innerHeight * devicePixelRatio);
 
             context.translate(canvas.width / 2, canvas.height / 2);
+            context.scale(devicePixelRatio, devicePixelRatio);
 
             self.$pointer.css({
                 "background-color": options.pointerColor,
