@@ -1,9 +1,6 @@
 # wheel-of-fortune-jquery
 jQuery wheel of fortune plugin
 
-# working demo
-http://dss.ba/wheel-of-fortune-jquery/demo.html
-
 #create
 ```javascript
 $(".wheel").wheelOfFortune({
